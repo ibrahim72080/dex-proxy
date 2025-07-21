@@ -1,0 +1,90 @@
+/* Genel ayarlar */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111; /* karbon siyahı */
+  color: #eee;
+}
+
+/* Başlık (üst kısım) */
+header {
+  background-color: #d90429; /* parlak kırmızı */
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Navigasyon menüsü */
+nav {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #d90429;
+}
+
+/* Bölümler */
+section {
+  padding: 50px 20px;
+  border-bottom: 1px solid #333;
+}
+
+/* Başlıklar */
+h2 {
+  color: #d90429;
+  margin-bottom: 20px;
+}
+
+.logos {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.logos img {
+  height: 50px;
+  filter: brightness(0) invert(1); /* Karbon temaya uygun hale getirir */
+  opacity: 0.7;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.logos img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
